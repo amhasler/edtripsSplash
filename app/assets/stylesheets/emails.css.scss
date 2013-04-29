@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Base style rules for type, background image, buttons
 #bg_image_overlay {
 	position: fixed;
 	top: 0;
@@ -20,19 +21,26 @@ h1, h2, h3, input, button {
 
 h1 {
 	font-weight:700;
+	font-size: 26pt;
 }
 
 h2 {
 	font-weight:500;
+	font-size: 18pt;
+	line-height: 24pt;
 }
 
 h3, input, button {
 	font-weight:300;
+	font-size: 15pt;
+	line-height:21pt;
 }
 
 p {
 	font-family: "museo-sans";
 	font-weight:500;
+	font-size: 12pt;
+	line-height: 16pt;
 }
 
 h1, h2 {
@@ -41,6 +49,14 @@ h1, h2 {
 
 h3, p {
 	color:#58585b
+}
+
+a {
+	color:#a3d55d;
+}
+
+a:hover {
+	color:#ee9a4d;	
 }
 
 .btn-custom.active {
@@ -114,3 +130,120 @@ h3, p {
 .btn-custom-darken.active {
   background-color: #70a22a ;
 }
+
+//Begin style rules for individual sections
+header img, header .btn{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+header img {
+	width:300px;
+	height:auto;
+	margin:20px auto;
+}
+
+header h1 {
+	text-align:center;
+}
+
+header {
+	background: -moz-linear-gradient(top,  rgba(14,144,197,1) 0%, rgba(43,185,218,0.6) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(14,144,197,1)), color-stop(100%,rgba(43,185,218,0.6))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(14,144,197,1) 0%,rgba(43,185,218,0.6) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(14,144,197,1) 0%,rgba(43,185,218,0.6) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(14,144,197,1) 0%,rgba(43,185,218,0.6) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(14,144,197,1) 0%,rgba(43,185,218,0.6) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e90c5', endColorstr='#992bb9da',GradientType=0 ); /* IE6-9 */
+ /* IE6-9 */
+	padding:0px;
+}
+
+div.hero {
+	background: transparent url("/assets/white_wall_hash.jpg") repeat;
+	border-radius:5px;
+	margin-bottom:40px;
+	padding:10px;
+}
+
+header .btn {
+	margin-top:20px;
+	height:60px;
+	width:380px;
+	font-size:18pt;
+}
+
+#main-call {
+	margin-bottom:40px;
+}
+
+//navbar styling
+nav {
+	border-bottom:3px dashed #58585b;
+}
+
+.navbar-inner {
+	background:transparent;
+	border:none;
+}
+
+ul.nav {
+	text-align:center;
+	display:block;
+	margin:10px auto 10px;
+	width:300px;
+}
+
+ul.nav li {
+	font-family: "museo-slab";
+	font-weight: 500;
+	font-height: 18pt;
+	display:inline-block;
+	width:100px;
+}
+
+.nav-pills > li > a {
+	font-size: 15pt;
+	color: #58585b;
+}
+
+.nav-pills > li > a:hover {
+	background-color: #ffffff;
+}
+
+nav {
+	background: transparent url("/assets/lined-paper.jpg") repeat;
+	background-position:25% 18%;
+	background-color:transparent;
+}
+
+//footer styles
+
+footer p {
+	color:#00a0dd;
+	position:absolute;
+	bottom:0;
+	margin-left:20px;
+}
+
+footer p, footer img {
+	float:left;
+	display:inline;
+}
+
+footer > div > .navbar {
+	margin-left:20px;
+}
+
+footer img {
+	height: 50px;
+	width:auto;
+	margin-bottom:5px;
+}
+
+.bottom a {
+	display:inline-block;
+	float:left;
+}
+
