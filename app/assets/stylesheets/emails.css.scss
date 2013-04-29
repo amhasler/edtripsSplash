@@ -164,7 +164,9 @@ div.hero {
 	background: transparent url("/assets/white_wall_hash.jpg") repeat;
 	border-radius:5px;
 	margin-bottom:40px;
-	padding:10px;
+	padding:10px 40px;
+	margin-left:5%;
+	margin-right:auto;
 }
 
 header .btn {
@@ -179,6 +181,21 @@ header .btn {
 }
 
 //navbar styling
+.arrow-down { 
+   width: 0; 
+   height: 0;
+   border-top: 35px solid rgba(43,185,218,.6);
+   border-left: 30px solid transparent; 
+   border-right: 30px solid transparent;
+   margin-top:-10px;
+   margin-left:18%;
+
+}
+
+
+
+
+
 nav {
 	border-bottom:3px dashed #58585b;
 }
@@ -205,15 +222,15 @@ ul.nav li {
 
 .nav-pills > li > a {
 	font-size: 15pt;
-	color: #58585b;
+	text-decoration: underline;
 }
 
 .nav-pills > li > a:hover {
-	background-color: #ffffff;
+	background-color: transparent;
 }
 
 nav {
-	background: transparent url("/assets/lined-paper.jpg") repeat;
+	background: transparent url("/assets/lined-paper.jpg");
 	background-position:25% 18%;
 	background-color:transparent;
 }
@@ -247,3 +264,35 @@ footer img {
 	float:left;
 }
 
+.socialB {
+	width:32px;
+	height:32px;
+	border-radius:5px;
+	margin-left:10px;
+}
+
+div.social {
+	float:right;
+	margin-right:40px;
+	background-color:transparent;	
+}
+
+#facebook {
+	background:url('facebook.jpg');
+	background-position:center center;
+}
+
+#twitter {
+	background:url('twitter.jpg');
+	background-position:center center;
+}
+
+#linkedin {
+	background:url('linkedin.jpg');
+	background-position:center center;
+}
+
+#pinterest {
+	background:url('pinterest.jpg');
+	background-position:center center;
+}
