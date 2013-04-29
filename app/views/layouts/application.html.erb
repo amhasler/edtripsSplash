@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Splash" %></title>
+
+    <script type="text/javascript" src="//use.typekit.net/kmi7rjv.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -34,12 +37,61 @@
     <!-- Size should be 32 x 32 pixels -->
   </head>
   <body>
-
-    <div class="container">
+    <div id="bg_image_overlay">
+      
         
       <%= yield %>
           
-    </div> <!-- /container -->
+    </div> <!-- /image_overlay-->
+
+    <div id="yourModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-remote="/contact">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="label2">Contact</h3>
+      </div>
+      <div class="modal-body">
+          
+      </div>
+    </div>
+    <!--modal 1 -->
+
+
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Stay in touch</h3>
+      </div>
+      <div class="modal-body">
+        <%= form_for(@email) do |f| %>
+          <div class="field">
+            <%= f.label :name %><br />
+            <%= f.text_field :name %>
+
+            <%= f.label :organization %><br />
+            <%= f.text_field :organization %>
+
+            <%= f.label :email %><br />
+            <%= f.text_field :email %>
+
+            <%= f.label "a representative of an educational company?" %>
+            <%= f.check_box :is_company %>
+            <%= f.label "an educator or potential traveler?"%>
+            <%= f.check_box :is_teacher %>
+            <%= f.label "none of the above?" %>
+            <%= f.check_box :is_neither %>
+            <%= f.label "Please do NOT send me newsletters or sign me up for the private beta of the next version of edtrips" %>
+            <%= f.check_box :no_contact %>
+          </div>
+
+          <div class="modal-footer">
+            <div class="actions">
+              <%= f.submit "Sign up", :class => "btn btn-primary btn-custom-lighten" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <!--modal 2 -->
 
     <!-- Javascripts
     ================================================== -->

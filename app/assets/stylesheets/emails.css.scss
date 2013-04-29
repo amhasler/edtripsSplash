@@ -2,14 +2,115 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-  background-color: #eee;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+#bg_image_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: transparent url("/assets/overlay.png") repeat;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+h1, h2, h3, input, button {
+  font-family: "museo-slab";
+}
+
+h1 {
+	font-weight:700;
+}
+
+h2 {
+	font-weight:500;
+}
+
+h3, input, button {
+	font-weight:300;
+}
+
+p {
+	font-family: "museo-sans";
+	font-weight:500;
+}
+
+h1, h2 {
+	color:#00a0dd;
+}
+
+h3, p {
+	color:#58585b
+}
+
+.btn-custom.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn-custom {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f2831b;
+  background-image: -moz-linear-gradient(top, #f98d29, #e87307);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f98d29), to(#e87307));
+  background-image: -webkit-linear-gradient(top, #f98d29, #e87307);
+  background-image: -o-linear-gradient(top, #f98d29, #e87307);
+  background-image: linear-gradient(to bottom, #f98d29, #e87307);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff98d29', endColorstr='#ffe87307', GradientType=0);
+  border-color: #e87307 #e87307 #9e4e04;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e87307;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.disabled,
+.btn-custom[disabled] {
+  color: #ffffff;
+  background-color: #e87307;
+  *background-color: #d06706;
+}
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #b75b05 ;
+}
+
+.btn-custom-darken.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn-custom-darken {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #9ad14d;
+  background-image: -moz-linear-gradient(top, #a3d55d, #8ccb34);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a3d55d), to(#8ccb34));
+  background-image: -webkit-linear-gradient(top, #a3d55d, #8ccb34);
+  background-image: -o-linear-gradient(top, #a3d55d, #8ccb34);
+  background-image: linear-gradient(to bottom, #a3d55d, #8ccb34);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa3d55d', endColorstr='#ff8ccb34', GradientType=0);
+  border-color: #8ccb34 #8ccb34 #628e25;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #8ccb34;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-custom-darken:hover,
+.btn-custom-darken:focus,
+.btn-custom-darken:active,
+.btn-custom-darken.active,
+.btn-custom-darken.disabled,
+.btn-custom-darken[disabled] {
+  color: #ffffff;
+  background-color: #8ccb34;
+  *background-color: #7eb62f;
+}
+.btn-custom-darken:active,
+.btn-custom-darken.active {
+  background-color: #70a22a ;
 }
