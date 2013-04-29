@@ -11,8 +11,9 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery_ujs
 //= require bootstrap
+//= require bootstrap-modal
 //= require Backstretch
+//= require jquery_ujs
 //= require_tree .
 
