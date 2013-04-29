@@ -1,0 +1,29 @@
+<h1>Get notified when we launch:</h1>
+
+<%= form_for(@email) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+
+    <%= f.label :organization %><br />
+    <%= f.text_field :organization %>
+
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+
+    <%= f.label :is_company %>
+    <%= f.check_box :is_company %>
+    <%= f.label :is_teacher %>
+    <%= f.check_box :is_teacher %>
+    <%= f.label :is_neither %>
+    <%= f.check_box :is_neither %>
+    <%= f.label :no_contact %>
+    <%= f.check_box :no_contact %>
+
+
+
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>

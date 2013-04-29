@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  organization: MyString
+  is_company: false
+  is_teacher: false
+  is_neither: false
+  no_contact: false
+
+two:
+  name: MyString
+  email: MyString
+  organization: MyString
+  is_company: false
+  is_teacher: false
+  is_neither: false
+  no_contact: false
