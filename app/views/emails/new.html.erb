@@ -1,29 +1,59 @@
-<h1>Get notified when we launch:</h1>
+<header>
+  <div class="container">
+    <h1>Get notified when we launch:</h1>
 
-<%= form_for(@email) do |f| %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= form_for(@email) do |f| %>
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
 
-    <%= f.label :organization %><br />
-    <%= f.text_field :organization %>
+        <%= f.label :organization %><br />
+        <%= f.text_field :organization %>
 
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+        <%= f.label :email %><br />
+        <%= f.text_field :email %>
 
-    <%= f.label :is_company %>
-    <%= f.check_box :is_company %>
-    <%= f.label :is_teacher %>
-    <%= f.check_box :is_teacher %>
-    <%= f.label :is_neither %>
-    <%= f.check_box :is_neither %>
-    <%= f.label :no_contact %>
-    <%= f.check_box :no_contact %>
+        <%= f.label "a representative of an educational company?" %>
+        <%= f.check_box :is_company %>
+        <%= f.label "an educator or potential traveler?"%>
+        <%= f.check_box :is_teacher %>
+        <%= f.label "none of the above?" %>
+        <%= f.check_box :is_neither %>
+        <%= f.label "Please do NOT send me newsletters or sign me up for the private beta of the next version of edtrips" %>
+        <%= f.check_box :no_contact %>
+      </div>
 
-
-
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+  <% end %>
   </div>
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+</header>
+
+<div class="nav">
+  <nav>
+    <ul>
+      <li>About Us</li>
+      <li>Home</li>
+      <li>Sneak preview</li>
+    </ul>
+  </nav>
+</div>
+
+<section>
+  <div class="row">
+    <img alt="This is an image for about us">
+    <p>This is info about us</p>
   </div>
-<% end %>
+</section>
+
+<section>
+  <div class="row">
+    <img alt="This is an image of the app">
+    <p>Here's how the explore feature works</p>
+  </div>
+</section>
+
+<footer>
+  <div>copyright and that nonsense</div>
+</footer>
