@@ -1,7 +1,12 @@
 Splash::Application.routes.draw do
-  resources :emails
-  get "emails/new"
-  root :to => 'emails#new'
+  get "static_page/home"
+
+  get "static_page/help"
+
+  match 'emails' => 'emails#new', :as => 'emails', :via => :get
+  match 'emails' => 'emails#create', :as => 'emails', :via => :post
+
+  #root :to => 'emails#new'
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post

@@ -14,6 +14,8 @@
 //= require bootstrap
 //= require bootstrap-modal
 //= require Backstretch
+//= require hashchange
+//= require sticky-header
 //= require jquery_ujs
 //= require_tree .
 

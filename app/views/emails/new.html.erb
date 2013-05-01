@@ -1,27 +1,4 @@
-<header>
-    <div class="container">
-      <img alt="edtrips logo" src="assets/horizontal-white.png">
-      <div class="hero span10">
-        <div class="row">
-          <h1 class="span5">Teachers use edtrips to plan and manage travel for groups, from around the corner to around the world.</h1>
-          <div class="span5">
-            <button href="#myModal" role="button" class="btn btn-primary btn-custom" data-toggle="modal" id="main-call">Sign up for notifications</button>
-            
-            <button class="btn btn-primary btn-custom-darken" data-target="#yourModal" role="button" data-toggle="modal">Contact us</button>
-          </div>
-      </div>
-    </div>
-</header>
 
-<nav>
-  <div class="navbar-inner">
-    <ul class="nav nav-pills">
-      <li><a href="/">About</a></li>
-      <li><div class="arrow-down"></div><a href="/">Home</a></li>
-      <li><a href="/">Preview</a></li>
-    </ul>
-  </div>
-</nav>
 <!--
 <section>
   <div class="row">
@@ -38,17 +15,30 @@
 </section>
 -->
 
+<%= form_for(@email) do |f| %>
+          <div class="field">
+            <%= f.label :name %><br />
+            <%= f.text_field :name %>
 
-<footer>
-  <div class="container navbar navbar-fixed-bottom bottom">
-        <a href="/"><img alt="smaller version of the logo" src="assets/logo-reversed.png"></a>
-        <p>&copy; 2013, Edtrips, inc.</p>
+            <%= f.label :organization %><br />
+            <%= f.text_field :organization %>
 
-        <div class="social">
-          <a href="https://www.facebook.com/EdTrips" target="_blank"><button class="socialB" id="facebook"></button></a>
-          <a href="https://twitter.com/Ed_Trips" target="_blank"><button class="socialB" id="twitter"></button></a>
-          <a href="http://www.linkedin.com/company/3097349" target="_blank"><button class="socialB" id="linkedin"></button></a>
-          <a href="http://m.pinterest.com/edtrips/" target="_blank"><button class="socialB" id="pinterest"></button></a>
-        </div>
-  </div>
-</footer>
+            <%= f.label :email %><br />
+            <%= f.text_field :email %>
+
+            <%= f.label "a representative of an educational company?" %>
+            <%= f.check_box :is_company %>
+            <%= f.label "an educator or potential traveler?"%>
+            <%= f.check_box :is_teacher %>
+            <%= f.label "none of the above?" %>
+            <%= f.check_box :is_neither %>
+            <%= f.label "Please do NOT send me newsletters or sign me up for the private beta of the next version of edtrips" %>
+            <%= f.check_box :no_contact %>
+          </div>
+
+          <div class="modal-footer">
+            <div class="actions">
+              <%= f.submit "Sign up", :class => "btn btn-primary btn-custom-lighten" %>
+            </div>
+          </div>
+        <% end %>
