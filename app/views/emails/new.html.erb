@@ -1,44 +1,29 @@
 
-<!--
-<section>
-  <div class="row">
-    <img alt="This is an image for about us">
-    <p>This is info about us</p>
-  </div>
-</section>
-
-<section>
-  <div class="row">
-    <img alt="This is an image of the app">
-    <p>Here's how the explore feature works</p>
-  </div>
-</section>
--->
-
 <%= form_for(@email) do |f| %>
-          <div class="field">
-            <%= f.label :name %><br />
-            <%= f.text_field :name %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
 
-            <%= f.label :organization %><br />
-            <%= f.text_field :organization %>
+    <%= f.label :organization %><br />
+    <%= f.text_field :organization %>
 
-            <%= f.label :email %><br />
-            <%= f.text_field :email %>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
 
-            <%= f.label "a representative of an educational company?" %>
-            <%= f.check_box :is_company %>
-            <%= f.label "an educator or potential traveler?"%>
-            <%= f.check_box :is_teacher %>
-            <%= f.label "none of the above?" %>
-            <%= f.check_box :is_neither %>
-            <%= f.label "Please do NOT send me newsletters or sign me up for the private beta of the next version of edtrips" %>
-            <%= f.check_box :no_contact %>
-          </div>
-
-          <div class="modal-footer">
-            <div class="actions">
-              <%= f.submit "Sign up", :class => "btn btn-primary btn-custom-lighten" %>
-            </div>
-          </div>
-        <% end %>
+    <div class="form-inline">
+    <%= f.check_box :is_company %>
+    <%= f.label "I am a representative of an educational company" %>
+    </div>
+    <div class="form-inline">
+    <%= f.check_box :is_teacher %>
+    <%= f.label "I am an educator or potential traveler"%>
+    </div>
+    <div class="form-inline">
+    <%= f.check_box :no_contact %>
+    <%= f.label "Please do not send me newsletters" %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign up", :class => "btn btn-primary btn-custom-lighten" %>
+  </div>
+<% end %>

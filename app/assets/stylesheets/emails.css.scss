@@ -1,0 +1,44 @@
+//styling for modal
+.form-inline {
+	height:20px;
+	vertical-align: middle;
+	margin:5px 0 0;
+}
+
+.form-inline input {
+	margin:0px;
+}
+
+label {
+	font-family: "museo sans";
+	font-weight: 500;
+	color:#58585b;
+}
+
+.new_email input[type="text"] {
+	margin-top:-20px;
+}
+
+input[type="submit"] {
+	margin-top:20px;
+}
+
+.modal-footer {
+	background-color: #ffffff;
+	margin-top: 30px;
+}
+
+.modal-header {
+	background: transparent url("/assets/white_wall_hash.jpg") repeat;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+textarea {
+	width:515px;
+	height:100px;
+}
+
+.modal-backdrop {
+	background-color: #00b2e2;
+}
