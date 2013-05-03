@@ -185,24 +185,27 @@ div.hero {
 
 }
 
-
-
-
-
 nav {
 	border-bottom:3px dashed #58585b;
 	width:100%;
+	background: transparent url("/assets/lined-paper.jpg");
+	background-position:25% 18%;
+	background-color:transparent;
 }
 
 .navbar-inner {
 	background:transparent;
 	border:none;
+	float:left;
+	display:block;
 }
 
 ul.nav {
 	text-align:center;
 	display:block;
 	margin:10px auto 10px;
+	margin-left:auto;
+	margin-right:auto;
 	width:300px;
 }
 
@@ -223,21 +226,7 @@ ul.nav li {
 	background-color: transparent;
 }
 
-nav {
-	background: transparent url("/assets/lined-paper.jpg");
-	background-position:25% 18%;
-	background-color:transparent;
-}
-
 //footer styles
-
-nav p {
-	color:#00a0dd;
-	margin-top:50px;
-	width:160px;
-	float:left;
-	display:inline-block;
-}
 
 .socialB {
 	width:32px;
@@ -251,9 +240,8 @@ nav p {
 	float:right;
 	width:200px;
 	margin-bottom:10px;
+	margin-top:10px;
 	display:inline-block;
-	position:fixed;
-	bottom:0;
 	right:0;
 }
 
@@ -300,4 +288,7 @@ nav p {
 .sectionText, .bottomBox img {
 	display:block;
 	float:left;
+}
+
+.centerFoto {
 }

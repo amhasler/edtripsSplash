@@ -15,20 +15,13 @@
       </header>
 
       <nav id="stickyheader">
-        <div class="navbar-inner">
+        <div class="navbar-inner span6 offset3">
           <ul class="nav nav-pills">
             <li><a href="#about">About</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#preview">Preview</a></li>
           </ul>
         </div>
-      </nav>
-
-      <%= render "about" %>
-
-      <%= render "preview" %>
-
-      <footer class="bottom">
         <div class="container navbar">
               <div class="social">
                 <a href="https://www.facebook.com/EdTrips" target="_blank"><button class="socialB" id="facebook"></button></a>
@@ -37,6 +30,14 @@
                 <a href="http://m.pinterest.com/edtrips/" target="_blank"><button class="socialB" id="pinterest"></button></a>
               </div>
         </div>
+      </nav>
+
+      <%= render "about" %>
+
+      <%= render "preview" %>
+
+      <footer class="bottom">
+        
       </footer>      
 
     <div id="yourModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-remote="/contact">
