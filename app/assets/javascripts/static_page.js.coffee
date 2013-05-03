@@ -12,12 +12,8 @@ $(window).hashchange ->
   $('section').addClass('hide')
 
   $(hash).removeClass('hide')
-    
 
-  $("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, 1000)
-
-  if hash is not "#about" or hash is not "#preview"
-  	$('html, body').animate({scrollTop:0}, 'slow')
+  $('html, body').animate({scrollTop: $(hash).offset().top}, 'slow')
 
   $(window).hashchange
 
@@ -30,8 +26,6 @@ $(window).load ->
 
   $(hash).removeClass('hide')
 
-  $("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, 1000)
+  $('html, body').animate({scrollTop: $(hash).offset().top}, 'slow')
 
-  if hash is not "#about" or hash is not "#preview"
-  	$('html, body').animate({scrollTop:0}, 'slow')
-
+  $(window).hashchange

@@ -277,9 +277,27 @@ nav p {
 	background-position:center center;
 }
 
+//bottom boxes
+
 .bottomBox {
 	background: transparent url("/assets/white_wall_hash.jpg") repeat;
 	margin-top:200px;
 	margin-bottom:50px;
 	padding:10px 20px;
+}
+
+.bottomBox .row {
+	margin-bottom:20px;
+}
+
+.bottomBox img {
+	height:auto;
+}
+
+.sectionText {
+}
+
+.sectionText, .bottomBox img {
+	display:block;
+	float:left;
 }
