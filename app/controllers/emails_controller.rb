@@ -2,7 +2,6 @@ class EmailsController < ApplicationController
   
   def new
     @email = Email.new
-    render :layout => false
   end
 
   def create
