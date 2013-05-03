@@ -1,6 +1,8 @@
 Splash::Application.routes.draw do
   get "static_page/home"
 
+  root :to => 'static_page#home'
+
   get "static_page/help"
 
   match 'emails' => 'emails#new', :as => 'emails', :via => :get
@@ -10,6 +12,7 @@ Splash::Application.routes.draw do
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
