@@ -171,15 +171,6 @@ div.hero {
 .headertext, .headerbuttons {
 	float:left;
 	margin-left:10px;
-	width:48%;
-}
-
-header .btn {
-	margin:20px auto;
-	height:60px;
-	width:100%;
-	font-size:18pt;
-	line-height: 24pt
 }
 
 //navbar styling
@@ -288,11 +279,7 @@ nav p {
 
 .bottomBox {
 	background: transparent url("/assets/white_wall_hash.jpg") repeat;
-	border-radius: 5px;
-	height:500px;
 	margin-top:200px;
 	margin-bottom:50px;
-	margin-left:5%;
-	margin-right:auto;
 	padding:10px 20px;
 }

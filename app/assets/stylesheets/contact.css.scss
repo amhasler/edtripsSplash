@@ -1,3 +1,82 @@
 // Place all the styles related to the contact controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//This is where i'm putting media query rules
+
+@media (min-width:768px) and (max-width:979px) {
+	.headerbuttons {
+		margin-top:60px;
+	}	
+}
+
+@media (min-width: 768px) {
+	.bottomBox {
+		margin-left:5%;
+		margin-right:auto;
+		border-radius: 5px;
+	}
+
+	header .btn {
+		height:60px;
+		width:100%;
+		font-size:18pt;
+		line-height: 24pt;
+		margin:20px auto;
+	}
+
+	.headertext, .headerbuttons {
+		width:48%;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.container {
+		width:100%;
+	}
+	body {
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.bottomBox {
+		width:100%;
+		margin-left:0px;
+		border-radius:0px;
+	}
+
+	.hero {
+		width:90%;
+	}
+
+	.headertext, .headerbuttons {
+		width:100%;
+	}
+
+	header .btn {
+		font-size:14pt;
+		line-height: 18pt;
+		margin:20px 10px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	header .btn {
+		float:left;
+		width:45%;
+		display:block;
+	}
+}
+
+@media (max-width: 767px) {
+	header .btn {
+		height:40px;
+	}
+}
+
+@media (max-width:480px) {
+	header .btn {
+		width:90%;
+	}
+}
+
